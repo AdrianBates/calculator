@@ -47,6 +47,12 @@ public class CalculatorTest {
 	}
 	
 	@Test
+	public void testDivide2By1_2() {
+		assertEquals(2, calculator.calculate(2, 1, "/"));
+	}
+	
+	
+	@Test
 	public void testIvalidMethod_IAE() {
 		
         Exception exception = assertThrows(
