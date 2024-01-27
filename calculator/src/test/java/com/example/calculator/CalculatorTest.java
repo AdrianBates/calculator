@@ -51,6 +51,11 @@ public class CalculatorTest {
 		assertEquals(2, calculator.calculate(2, 1, "/"));
 	}
 	
+	@Test
+	public void testDivide2By3_RoundsDown() {
+		assertEquals(0, calculator.calculate(2, 3, "/"));
+	}
+	
 	
 	@Test
 	public void testIvalidMethod_IAE() {
