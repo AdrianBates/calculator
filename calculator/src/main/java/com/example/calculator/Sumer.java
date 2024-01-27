@@ -1,10 +1,10 @@
 package com.example.calculator;
 
-public class Summer {
+public class Sumer {
 
 	private DataSource dataSource;
 
-	public Summer(DataSource dataSource) {
+	public Sumer(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
 

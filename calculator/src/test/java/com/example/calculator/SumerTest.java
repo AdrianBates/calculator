@@ -9,18 +9,18 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class SummerTest {
+public class SumerTest {
 	
 	private DataSource mockSource = mock();
 	
-	private Summer summer = new Summer(mockSource);
+	private Sumer sumer = new Sumer(mockSource);
 	
 	@Test
 	public void testSum_123_6() {
 		
 		when(mockSource.getData()).thenReturn(new int[]{0, 1, 2, 3});
 
-		assertEquals(6, summer.sum());
+		assertEquals(6, sumer.sum());
 		
 		verify(mockSource).getData();
 	}
@@ -30,7 +30,7 @@ public class SummerTest {
 		
 		when(mockSource.getData()).thenReturn(new int[]{2, 3, 4});
 
-		assertEquals(9, summer.sum());
+		assertEquals(9, sumer.sum());
 		
 		verify(mockSource).getData();
 	}
